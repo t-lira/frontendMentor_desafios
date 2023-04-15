@@ -1,0 +1,146 @@
+@import url(./reset.css);
+
+:root{
+  /*Primary*/
+
+--Paleblue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+
+/*Neutral*/
+
+--Veryblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+
+
+body{
+  background-color: var(--Paleblue);
+  padding: 5px 20px;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.container{
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .img-content{
+  background-image: url(../images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+}
+
+.container .txt-content{
+  padding: 15px 20px;
+}
+
+.container .txt-content h1{
+  text-align: center;
+  color: var(--Darkblue);
+  font-weight: bolder;
+  margin-top: 10px;
+}
+.container .txt-content p{
+  text-align: center;
+  color:var(--Desaturatedblue);
+  font-size: 1rem;
+  width: 80%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.container .txt-content .box{
+  background-color: var(--Veryblue);
+  border-radius: 10px;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0 20px;
+}
+
+.container .txt-content .box .value h2,h3{
+  font-size: 1rem;
+  color: var(--Darkblue);
+}
+
+.container .txt-content  .box .value h3{
+  color:var(--Desaturatedblue);
+  font-weight: lighter;
+
+}
+
+.container .txt-content  .box  h4{
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--Brightblue);
+  font-size: 0.9rem;
+}
+.container .txt-content  .box  h4:hover{
+  color: var(--Darkblue);
+}
+
+/*BUTTON*/
+.container .btn-box .btn{
+  border: none;
+  width: 100%;
+  height: 55px;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.container .btn-box .btn-color{
+  background-color: var(--Brightblue);
+  color: var(--Veryblue);
+  font-weight: bold;
+  box-shadow: -1px 5px 37px -12px rgba(0,0,0,0.82);
+-webkit-box-shadow: -1px 5px 37px -12px rgba(0,0,0,0.82);
+-moz-box-shadow: -1px 5px 37px -12px rgba(0,0,0,0.82);
+}
+.container .btn-box .btn-color:hover{
+  background-color: var(--Desaturatedblue);
+}
+
+.container .btn-box .btn-transparent{
+  background-color: transparent;
+  color: var(--Desaturatedblue);
+  font-weight: bold;
+}
+.container .btn-box .btn-transparent:hover{
+  color: var(--Darkblue);
+}
+
+@media(min-width:1024px){
+
+  body{
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+ .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+  }
+
+  .container .img-content{
+    padding: 130px;
+  }
+
+  .container .txt-content p{
+    width: 70%;
+  }
+
+  
+
+}
